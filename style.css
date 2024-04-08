@@ -1,45 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+.container {
+    margin-top: 50px;
+}
+
+.array-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-h1 {
-    margin: 0;
+.array-bar {
+    width: 20px;
+    margin: 0 2px;
+    background-color: dodgerblue;
 }
 
-#search, #category-filter {
-    padding: 5px;
-    font-size: 16px;
+.controls {
+    margin-top: 20px;
 }
 
-main {
-    padding: 20px;
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
-.pet-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: flex;
-}
-
-.pet-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.pet-info {
-    flex-grow: 1;
-}
