@@ -1,31 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+// Function to generate a random array
+function generateArray() {
+    const arrayContainer = document.getElementById("array-container");
+    arrayContainer.innerHTML = ""; // Clear previous array
+
+    const arraySize = 20; // Number of elements in the array
+    const maxNumber = 100; // Maximum value for array elements
+
+    for (let i = 0; i < arraySize; i++) {
+        const randomNumber = Math.floor(Math.random() * maxNumber) + 1;
+        const bar = document.createElement("div");
+        bar.classList.add("array-bar");
+        bar.style.height = `${randomNumber}px`;
+        arrayContainer.appendChild(bar);
+    }
 }
 
-.container {
-    margin-top: 50px;
+// Function to start sorting
+function startSorting() {
+    const algorithm = document.getElementById("algorithm").value;
+    const bars = document.querySelectorAll(".array-bar");
+
+    if (algorithm === "bubble") {
+        bubbleSort(bars);
+    } else if (algorithm === "merge") {
+        mergeSort(bars);
+    }
 }
 
-.array-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+// Bubble Sort algorithm
+function bubbleSort(bars) {
+    // Implementation of bubble sort algorithm
+    // Modify the bars array to visualize sorting
 }
 
-.array-bar {
-    width: 20px;
-    margin: 0 2px;
-    background-color: dodgerblue;
+// Merge Sort algorithm
+function mergeSort(bars) {
+    // Implementation of merge sort algorithm
+    // Modify the bars array to visualize sorting
 }
-
-.controls {
-    margin-top: 20px;
-}
-
-.controls button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
