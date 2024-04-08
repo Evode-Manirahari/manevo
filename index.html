@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Catalog</title>
+    <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Pet Catalog</h1>
-        <input type="text" id="search" placeholder="Search pets...">
-        <select id="category-filter">
-            <option value="">All</option>
-            <option value="dog">Dogs</option>
-            <option value="cat">Cats</option>
-            <option value="bird">Birds</option>
-        </select>
-    </header>
-    <main id="pet-container">
-        <!-- Pets will be dynamically added here -->
-    </main>
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <div class="array-container" id="array-container"></div>
+        <div class="controls">
+            <button onclick="generateArray()">Generate New Array</button>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="merge">Merge Sort</option>
+                <!-- Add more sorting algorithms here -->
+            </select>
+            <button onclick="startSorting()">Start Sorting</button>
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
+
