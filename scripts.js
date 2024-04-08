@@ -1,4 +1,3 @@
-
 // Sample data for pets
 const pets = [
     { name: "Buddy", image: "dog.jpg", description: "Golden Retriever", category: "dog" },
